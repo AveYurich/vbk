@@ -19,7 +19,18 @@ gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
 # See https://github.com/rails/execjs#readme for more supported runtimes
-# gem 'therubyracer', platforms: :ruby
+gem 'therubyracer', platforms: :ruby
+
+# Develop Gems
+
+# See more at: https://github.com/indirect/haml-rails
+gem 'haml-rails', '~> 0.9'
+# See more at: https://github.com/twbs/bootstrap-sass
+gem 'bootstrap-sass', '~> 3.3.6'
+# See more at: https://github.com/FortAwesome/font-awesome-sass
+gem 'font-awesome-sass', '~> 4.7.0'
+# Use Unicorn as the app server
+gem 'unicorn'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
@@ -47,6 +58,13 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+
+  # See more at: https://github.com/dhl/erb2haml
+  gem 'erb2haml'
+  # See more at: https://github.com/presidentbeef/brakeman
+  gem 'brakeman', :require => false
+  gem 'pry-rails'
+  gem 'better_errors'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
