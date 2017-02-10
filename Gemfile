@@ -34,7 +34,9 @@ gem 'unicorn'
 
 gem 'bourbon'
 
-gem 'normalize-scss'
+gem 'neat'
+
+gem 'normalize-rails'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'

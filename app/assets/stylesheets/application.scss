@@ -1,1 +1,7 @@
-@import "wds18f/uswds";
+// Vendor -------------- //
+@import 'bourbon';
+@import 'neat';
+@import 'normalize-rails';
+
+// Custom Style -------------- //
+@import "stylesheets/uswds";
