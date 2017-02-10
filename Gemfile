@@ -26,11 +26,15 @@ gem 'therubyracer', platforms: :ruby
 # See more at: https://github.com/indirect/haml-rails
 gem 'haml-rails', '~> 0.9'
 # See more at: https://github.com/twbs/bootstrap-sass
-gem 'bootstrap-sass', '~> 3.3.6'
+# gem 'bootstrap-sass', '~> 3.3.6'
 # See more at: https://github.com/FortAwesome/font-awesome-sass
 gem 'font-awesome-sass', '~> 4.7.0'
 # Use Unicorn as the app server
 gem 'unicorn'
+
+gem 'bourbon'
+
+gem 'normalize-scss'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
