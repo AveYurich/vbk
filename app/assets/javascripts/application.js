@@ -12,6 +12,6 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require javascripts/start
+//= require javascripts/uswds
 //= require turbolinks
 //= require_tree .

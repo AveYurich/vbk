@@ -1,1 +1,164 @@
-index page
+%body.layout-demo
+  %a.usa-skipnav{:href => "#main-content"} Skip to main content
+  %header.usa-header.usa-header-extended{:role => "banner"}
+    / Gov banner BEGIN
+    .usa-banner
+      .usa-accordion
+        %header.usa-banner-header
+          .usa-grid.usa-banner-inner
+            = image_tag('wds18f/favicons/favicon-57.png', alt: 'U.S. flag')
+            %p An official website of the United States government
+            %button.usa-accordion-button.usa-banner-button{"aria-controls" => "gov-banner", "aria-expanded" => "false"}
+              %span.usa-banner-button-text Here's how you know
+        #gov-banner.usa-banner-content.usa-grid.usa-accordion-content
+          .usa-banner-guidance-gov.usa-width-one-half
+            = image_tag('wds18f/icon-dot-gov.svg', alt: 'Dot gov', class: 'usa-banner-icon usa-media_block-img')
+            .usa-media_block-body
+              %p
+                %strong The .gov means it’s official.
+                %br/
+                Federal government websites always use a .gov or .mil domain. Before sharing sensitive information online, make sure you’re on a .gov or .mil site by inspecting your browser’s address (or “location”) bar.
+          .usa-banner-guidance-ssl.usa-width-one-half
+            = image_tag('wds18f/icon-https.svg', alt: 'SSL', class: 'usa-banner-icon usa-media_block-img')
+            .usa-media_block-body
+              %p
+                This site is also protected by an SSL (Secure Sockets Layer) certificate that’s been signed by the U.S. government. The
+                %strong https:/
+                means all transmitted data is encrypted  — in other words, any information or browsing history that you provide is transmitted securely.
+    / Gov banner END
+    .usa-navbar
+      %button.usa-menu-btn Menu
+      #logo.usa-logo
+        %em.usa-logo-text
+          %a{:accesskey => "1", "aria-label" => "Home", :href => "#", :title => "Home"} Federal Agency Name
+    %nav.usa-nav{:role => "navigation"}
+      .usa-nav-inner
+        %button.usa-nav-close
+          = image_tag('wds18f/close.svg', alt: 'close')
+        %ul.usa-nav-primary.usa-accordion
+          %li
+            %button.usa-accordion-button.usa-nav-link{"aria-controls" => "side-nav-1", "aria-expanded" => "false"}
+              %span Section title
+            %ul#side-nav-1.usa-nav-submenu
+              %li
+                %a{:href => "#"} Page title
+              %li
+                %a{:href => "#"} Page title
+              %li
+                %a{:href => "#"} Page title
+          %li
+            %button.usa-accordion-button.usa-nav-link{"aria-controls" => "sidenav-2", "aria-expanded" => "false"}
+              %span Simple terms
+            %ul#sidenav-2.usa-nav-submenu
+              %li
+                %a{:href => "#"} Page title
+              %li
+                %a{:href => "#"} Page title
+              %li
+                %a{:href => "#"} Page title
+          %li
+            %a.usa-nav-link{:href => "#"}
+              %span Distinct from each other
+          %li
+            %button.usa-accordion-button.usa-nav-link{"aria-controls" => "sidenav-3", "aria-expanded" => "false"}
+              %span More details in sub-menus
+            %ul#sidenav-3.usa-nav-submenu
+              %li
+                %a{:href => "#"} Page title
+              %li
+                %a{:href => "#"} Page title
+              %li
+                %a{:href => "#"} Page title
+        .usa-nav-secondary
+          %form.usa-search.usa-search-small.js-search-form
+            %div{:role => "search"}
+              %label.usa-sr-only{:for => "search-field-small"} Search small
+              %input#search-field-small{:name => "search", :type => "search"}/
+              %button{:type => "submit"}
+                %span.usa-sr-only Search
+          %ul.usa-unstyled-list.usa-nav-secondary-links
+            %li.js-search-button-container
+              %button.usa-header-search-button.js-search-button Search
+            %li
+              %a{:href => "#"} Secondary priority link
+            %li
+              %a{:href => "#"} Easy to comprehend
+  .usa-overlay
+  %main#main-content
+    %section.usa-hero
+      .usa-grid
+        .usa-hero-callout.usa-section-dark
+          %h2
+            %span.usa-hero-callout-alt Hero callout:
+            Call attention to a current priority
+          %a.usa-hero-link{:href => "#"} Link to more about that priority
+          %a.usa-button.usa-button-big.usa-button-secondary{:href => "#"} Learn about what we do
+    %section.usa-grid.usa-section
+      .usa-width-one-third
+        %h2 A tagline highlights your approach.
+      .usa-width-two-thirds
+        %p The tagline should inspire confidence and interest, focusing on the value that your overall approach offers to your audience. Use a heading typeface and keep your tagline to just a few words, and don’t confuse or mystify.
+        %p Use the right side of the grid to explain the tagline a bit more. What are your goals? How do you do your work? Write in the present tense, and stay brief here. People who are interested can find details on internal pages.
+    %section.usa-section.usa-section-dark.usa-graphic_list
+      .usa-grid.usa-graphic_list-row
+        .usa-width-one-half.usa-media_block
+          = image_tag('wds18f/circle-124.png', alt: 'Text', class: 'usa-media_block-img')
+          .usa-media_block-body
+            %h3 Graphic headings can vary.
+            %p Graphic headings can be used a few different ways, depending on what your landing page is for. Highlight your values, specific program areas, or results.
+        .usa-width-one-half.usa-media_block
+          = image_tag('wds18f/circle-124.png', alt: 'Text', class: 'usa-media_block-img')
+          .usa-media_block-body
+            %h3 Stick to 6 or fewer words.
+            %p Keep body text to about 30. They can be shorter, but try to be somewhat balanced across all four. It creates a clean appearance with good spacing.
+      .usa-grid.usa-graphic_list-row
+        .usa-width-one-half.usa-media_block
+          = image_tag('wds18f/circle-124.png', alt: 'Text', class: 'usa-media_block-img')
+          .usa-media_block-body
+            %h3 Never highlight anything without a goal.
+            %p For anything you want to highlight here, understand what your users know now, and what activity or impression you want from them after they see it.
+        .usa-width-one-half.usa-media_block
+          = image_tag('wds18f/circle-124.png', alt: 'Text', class: 'usa-media_block-img')
+          .usa-media_block-body
+            %h3 Could also have 2 or 6.
+            %p In addition to your goal, find out your users’ goals. What do they want to know or do that supports your mission? Use these headings to show those.
+    %section.usa-section
+      .usa-grid
+        %h2 Section heading
+        %p.usa-font-lead Everything up to this point should help people understand your agency or project: who you are, your goal or mission, and how you approach it. Use this section to encourage them to act. Describe why they should get in touch here, and use an active verb on the button below. “Get in touch,” “Learn more,” and so on.
+        %a.usa-button.usa-button-big{:href => "#"} Call to action
+  %footer.usa-footer.usa-footer-medium{:role => "contentinfo"}
+    .usa-grid.usa-footer-return-to-top
+      %a{:href => "#"} Return to top
+    .usa-footer-primary-section
+      .usa-grid-full
+        %nav.usa-footer-nav
+          %ul.usa-unstyled-list
+            %li.usa-width-one-fourth.usa-footer-primary-content
+              %a.usa-footer-primary-link{:href => "javascript:void(0);"} Primary link
+            %li.usa-width-one-fourth.usa-footer-primary-content
+              %a.usa-footer-primary-link{:href => "javascript:void(0);"} Permanently relevant
+            %li.usa-width-one-fourth.usa-footer-primary-content
+              %a.usa-footer-primary-link{:href => "javascript:void(0);"} Easy to understand
+            %li.usa-width-one-fourth.usa-footer-primary-content
+              %a.usa-footer-primary-link{:href => "javascript:void(0);"} Site policies (example)
+    .usa-footer-secondary_section
+      .usa-grid
+        .usa-footer-logo.usa-width-one-half
+          = image_tag('wds18f/logo-img.png', alt: 'Logo image', class: 'usa-footer-circle-124')
+          %h3.usa-footer-logo-heading Name of Agency
+        .usa-footer-contact-links.usa-width-one-half
+          %a.usa-link-facebook{:href => "javascript:void(0);"}
+            %span Facebook
+          %a.usa-link-twitter{:href => "javascript:void(0);"}
+            %span Twitter
+          %a.usa-link-youtube{:href => "javascript:void(0);"}
+            %span YouTube
+          %a.usa-link-rss{:href => "javascript:void(0);"}
+            %span RSS
+          %address
+            %h3.usa-footer-contact-heading Agency Contact Center
+            %p (800) CALL-GOVT
+            %a{:href => "mailto:info@agency.gov"} info@agency.gov
+  / Update the link path to where your JavaScript file is located. For example: /path/to/your/assets/js/lib/uswds.min.js
+  -#%script{:src => "/assets/js/vendor/uswds.min.js"}
