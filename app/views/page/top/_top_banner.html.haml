@@ -1,0 +1,18 @@
+.usa-banner
+  .usa-accordion
+    = render partial: 'page/top/top_header_panel'
+    #gov-banner.usa-banner-content.usa-grid.usa-accordion-content
+      .usa-banner-guidance-gov.usa-width-one-half
+        = image_tag('wds18f/icon-dot-gov.svg', alt: 'Dot gov', class: 'usa-banner-icon usa-media_block-img')
+        .usa-media_block-body
+          %p
+            %strong The .gov means it’s official.
+            %br/
+            Federal government websites always use a .gov or .mil domain. Before sharing sensitive information online, make sure you’re on a .gov or .mil site by inspecting your browser’s address (or “location”) bar.
+      .usa-banner-guidance-ssl.usa-width-one-half
+        = image_tag('wds18f/icon-https.svg', alt: 'SSL', class: 'usa-banner-icon usa-media_block-img')
+        .usa-media_block-body
+          %p
+            This site is also protected by an SSL (Secure Sockets Layer) certificate that’s been signed by the U.S. government. The
+            %strong https:/
+            means all transmitted data is encrypted  — in other words, any information or browsing history that you provide is transmitted securely.
