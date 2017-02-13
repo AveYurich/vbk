@@ -13,6 +13,7 @@ module Vbk
     # -- all .rb files in that directory are automatically loaded.
 
     config.assets.paths << Rails.root.join('vendor', 'assets', 'wds18f')
-
+    config.assets.paths << Rails.root.join('vendor', 'assets', 'fonts')
+    config.assets.precompile << /\.(?:svg|eot|woff|ttf)$/
   end
 end
