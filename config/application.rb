@@ -15,5 +15,6 @@ module Vbk
     config.assets.paths << Rails.root.join('vendor', 'assets', 'wds18f')
     config.assets.paths << Rails.root.join('vendor', 'assets', 'fonts')
     config.assets.precompile << /\.(?:svg|eot|woff|ttf)$/
+    config.serve_static_assets = true
   end
 end
