@@ -1,5 +1,16 @@
-.usa-navbar
-  %button.usa-menu-btn Menu
-  #logo.usa-logo
-    %em.usa-logo-text
-      %a{:accesskey => "1", "aria-label" => "Home", :href => "#", :title => "Home"} Federal Agency Name
+:scss
+  .logo-container {
+    text-align: center  ;
+    img {
+      width: 160px;
+    }
+  }
+
+-#.usa-navbar
+-#  %button.usa-menu-btn Menu
+-#  #logo.usa-logo
+-#    %em.usa-logo-text
+-#      %a{:accesskey => "1", "aria-label" => "Home", :href => "#", :title => "Home"} Federal Agency Name
+-#
+.logo-container
+  = image_tag 'main_logo.png'

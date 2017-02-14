@@ -1,52 +1,109 @@
-%nav.usa-nav{:role => "navigation"}
-  .usa-nav-inner
-    %button.usa-nav-close
-      = image_tag('wds18f/close.svg', alt: 'close')
-    %ul.usa-nav-primary.usa-accordion
-      %li
-        %button.usa-accordion-button.usa-nav-link{"aria-controls" => "side-nav-1", "aria-expanded" => "false"}
-          %span Section title
-        %ul#side-nav-1.usa-nav-submenu
-          %li
-            %a{:href => "#"} Page title
-          %li
-            %a{:href => "#"} Page title
-          %li
-            %a{:href => "#"} Page title
-      %li
-        %button.usa-accordion-button.usa-nav-link{"aria-controls" => "sidenav-2", "aria-expanded" => "false"}
-          %span Simple terms
-        %ul#sidenav-2.usa-nav-submenu
-          %li
-            %a{:href => "#"} Page title
-          %li
-            %a{:href => "#"} Page title
-          %li
-            %a{:href => "#"} Page title
-      %li
-        %a.usa-nav-link{:href => "#"}
-          %span Distinct from each other
-      %li
-        %button.usa-accordion-button.usa-nav-link{"aria-controls" => "sidenav-3", "aria-expanded" => "false"}
-          %span More details in sub-menus
-        %ul#sidenav-3.usa-nav-submenu
-          %li
-            %a{:href => "#"} Page title
-          %li
-            %a{:href => "#"} Page title
-          %li
-            %a{:href => "#"} Page title
-    .usa-nav-secondary
-      %form.usa-search.usa-search-small.js-search-form
-        %div{:role => "search"}
-          %label.usa-sr-only{:for => "search-field-small"} Search small
-          %input#search-field-small{:name => "search", :type => "search"}/
-          %button{:type => "submit"}
-            %span.usa-sr-only Search
-      %ul.usa-unstyled-list.usa-nav-secondary-links
-        %li.js-search-button-container
-          %button.usa-header-search-button.js-search-button Search
-        %li
-          %a{:href => "#"} Secondary priority link
-        %li
-          %a{:href => "#"} Easy to comprehend
+:scss
+  .menu-container {
+    font-weight: 500;
+    background-color: #3d3d3d;
+    ul {
+      font-size: 15px;
+      margin: 0;
+      list-style: none;
+      display: flex;
+      li {
+        height: 100%;
+        padding: 5px;
+        margin: 0;
+        a {
+          text-decoration: none;
+          text-align: center;
+          color: white;
+        }
+        .main-button {
+            color: yellow;
+        }
+      }
+      li:hover {
+        background-color: #ABABAB;
+      }
+    }
+  }
+
+
+.menu-container.container-fluid
+  %ul
+    %li.col-xs-1
+      = link_to root_path do
+        .main-button Головна
+    %li.col-xs-1
+      = link_to '#' do
+        Поро компанію
+    %li.col-xs-1
+      = link_to '#' do
+        Технології
+    %li.col-xs-1
+      = link_to '#' do
+        Пороекти
+    %li.col-xs-1
+      = link_to '#' do
+        Галерея
+    %li.col-xs-1
+      = link_to '#' do
+        Послуги та ціни
+    %li.col-xs-1
+      = link_to '#' do
+        Партнери
+    %li.col-xs-1
+      = link_to '#' do
+        Контакти
+
+
+-#%nav.usa-nav{:role => "navigation"}
+-#  .usa-nav-inner
+-#    %button.usa-nav-close
+-#      = image_tag('wds18f/close.svg', alt: 'close')
+-#    %ul.usa-nav-primary.usa-accordion
+-#      %li
+-#        %button.usa-accordion-button.usa-nav-link{"aria-controls" => "side-nav-1", "aria-expanded" => "false"}
+-#          %span Section title
+-#        %ul#side-nav-1.usa-nav-submenu
+-#          %li
+-#            %a{:href => "#"} Page title
+-#          %li
+-#            %a{:href => "#"} Page title
+-#          %li
+-#            %a{:href => "#"} Page title
+-#      %li
+-#        %button.usa-accordion-button.usa-nav-link{"aria-controls" => "sidenav-2", "aria-expanded" => "false"}
+-#          %span Simple terms
+-#        %ul#sidenav-2.usa-nav-submenu
+-#          %li
+-#            %a{:href => "#"} Page title
+-#          %li
+-#            %a{:href => "#"} Page title
+-#          %li
+-#            %a{:href => "#"} Page title
+-#      %li
+-#        %a.usa-nav-link{:href => "#"}
+-#          %span Distinct from each other
+-#      %li
+-#        %button.usa-accordion-button.usa-nav-link{"aria-controls" => "sidenav-3", "aria-expanded" => "false"}
+-#          %span More details in sub-menus
+-#        %ul#sidenav-3.usa-nav-submenu
+-#          %li
+-#            %a{:href => "#"} Page title
+-#          %li
+-#            %a{:href => "#"} Page title
+-#          %li
+-#            %a{:href => "#"} Page title
+-#    .usa-nav-secondary
+-#      %form.usa-search.usa-search-small.js-search-form
+-#        %div{:role => "search"}
+-#          %label.usa-sr-only{:for => "search-field-small"} Search small
+-#          %input#search-field-small{:name => "search", :type => "search"}/
+-#          %button{:type => "submit"}
+-#            %span.usa-sr-only Search
+-#      %ul.usa-unstyled-list.usa-nav-secondary-links
+-#        %li.js-search-button-container
+-#          %button.usa-header-search-button.js-search-button Search
+-#        %li
+-#          %a{:href => "#"} Secondary priority link
+-#        %li
+-#          %a{:href => "#"} Easy to comprehend
