@@ -1,8 +1,7 @@
 require_relative 'boot'
-config.serve_static_assets = true
-config.action_dispatch.x_sendfile_header = 'X-Accel-Redirect'
-config.assets.compile = true
+
 require 'rails/all'
+
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
@@ -16,6 +15,5 @@ module Vbk
     config.assets.paths << Rails.root.join('vendor', 'assets', 'wds18f')
     config.assets.paths << Rails.root.join('vendor', 'assets', 'fonts')
     config.assets.precompile << /\.(?:svg|eot|woff|ttf)$/
-    config.serve_static_assets = true
   end
 end
