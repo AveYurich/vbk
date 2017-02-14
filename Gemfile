@@ -77,4 +77,4 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 # postgreSQL for heroku
 gem 'pg'
 
-gem 'rails_12factor', group: :production
+gem 'rails_12factor'
